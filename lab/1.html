@@ -1,0 +1,462 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>Coffins by Team7</title>
+<link rel="stylesheet" type="text/css" href="../src/colors.css">
+<link rel="stylesheet" type="text/css" href="../src/root.css"> 
+<script type="text/javascript" src="../src/script.js"></script>
+</head>
+<body> 
+	<div class="wrapper">
+		<div class="header">
+			<h2>
+				Звіти з лабораторних робіт
+			</h2>
+			<h2>
+				з дисципліни
+				<span class="title">Технології .Net розробки веб-додатків</span>
+			</h2>
+			<h2>
+				студентів групи ІТ-81 Денщик Сергій, Камінський Данило, Нікулін Владислав
+			</h2>
+		</div>
+		<div class="topbar flex horizontal-alignment">
+			<a class="topbar-item shadow" href="../index.html">Title</a>
+			<a class="topbar-item shadow active" href="1.html">Lab 1</a>
+			<a class="topbar-item shadow" href="2.html">Lab 2</a>
+			<a class="topbar-item shadow" href="3.html">Lab 3</a>
+			<a class="topbar-item shadow" href="4.html">Lab 4</a>
+			<a class="topbar-item shadow" href="5.html">Lab 5</a>
+			<a class="topbar-item shadow" href="6.html">Lab 6</a>
+			<a class="topbar-item shadow" href="7.html">Lab 7</a>
+			<a class="topbar-item shadow" href="8.html">Lab 8</a>
+			<a class="topbar-item shadow" href="9.html">Lab 9</a>
+		</div>
+		<div class="main">
+            <div id="menu">
+            	<div class="dropdown">
+                	<a class="menu-item flex">1. Характеристика об’єкта автоматизації</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex active-link" onclick="ChangeTab(this, '1')">1.1. Опис об'єкта управління</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">1.2. Мета розробки проекту</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">1.3. Бізнес-задачі</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">1.4. Бізнес-процеси</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">1.5. Сценарії дій системи</a>
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">2. Об’єктно-орієнтована декомпозиції  предметного середовища</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.1. Таблиця лінгвістичного аналізу іменникових груп</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">2.2. Таблиця лінгвістичного аналізу дієслівних груп</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">2.3. Об'єкто-орієнтована декомпозиція предметного середовища</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.4. Функціональні вимоги замовника </a>
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">3. Проектування ПЗ</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '10')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
+      
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">4. Кодування (програмування)</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '11')"> 4.1. Файлова структура проекту</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.2. Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</a>
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '13')">5.1. Папка з проектом</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '14')">5.2. Запуск ехе-файла</a>
+               		</div>
+                </div>
+            </div>
+    
+            <div id="content">
+                <div id="1" class="active-item">
+                    <p>Опис об'єкта управління</p>
+                    <p>
+                    	Об'єктом управління є система для показання та продажу костюмів, онлайн магазин.     
+                    </p>
+                    <p>
+                    	Клієнт використовуючи сайт має можливість подивитися костюми в наявності, обрати той, що йому сподобається, подивитися в яких магазинах він є, щоб його забрати, оформити замовлення та перевірити розмір.
+                     </p>
+                     <p>
+                     	Адміністратор повинен мати доступ до модифікації списку товарів, мати можливість модерувати користувачів застосунку, перевіряти замовлення та контролювати процес роботи всього додатку.
+                     </p>
+                    <!-- <img src="4.jpg"/> -->
+                </div>
+                <div id="2" class="item">
+                	<p>Мета розробки проекту</p>
+                	<ul>
+                		<li>Створення системи продажу товарів онлайн</li>
+                		<li>Контролювання роботи магазину</li>
+						<li>Створення звітності по замовленням</li>
+						<li>Практика у написанні інтернет додатків</li>
+                	</ul>
+                </div>
+                <div id="3" class="item">
+                	<p>
+                		Бізнес-задачі
+                	</p>
+                	<ul>
+                		<li>Пошук костюму</li>
+                		<li>Вибір костюму</li>
+                		<li>Замовлення костюму</li>
+                		<li>Отримання підтверждення про замовлення</li>
+                	</ul>
+                </div>
+                <div id="4" class="item">
+                	<p>
+                		Бізнес-процеси
+                	</p>
+                	<ul>
+                		<li>Отримати список костюмів</li>
+                		<li>Отримати інформацію про костюми</li>
+                		<li>Обрати костюм</li>
+						<li>Отримати підтверждення про замовлення</li>
+                		<li>Отримати адрес на магазин, щоб забрати костюм</li>
+						<li>Створення звітності про покупку</li>
+					</ul>
+                </div>
+                <div id="5" class="item">
+                	<p>
+                		Сценарії дії системи
+                	</p>
+                	<p>
+                		Користувач
+                	</p>
+                	<ul>
+                		<li>1. Користувач виконує вхід до системи</li>
+                		<li>2. Обирає костюм для замовлення (за певним мтилем чи з переліку доступних по акції)</li>
+						<li>3. Отримує данні про замовлення костюму</li>
+						<li>4. Оримує адрес магазину, щоб забрати костюм</li>
+                		<li>5. Отримує чек, який підверджує покупку костюму</li>
+                	</ul>
+
+                	<p>
+                		Адміністратор
+                	</p>
+                	<ul>
+                		<li>1. Адміністратор виконує вхід до системи</li>
+                		<li>2. Отримує доступ до бази даних</li>
+                		<li>2.1. Працює із даними користувачів</li>
+                		<li>2.2. Працює із даними костюмів</li>
+						<li>3. Підверджує впроваджені зміни</li>
+						<li>4. Переглядає замовлення</li>
+                	</ul>
+                </div>
+                <div id="6" class="item">
+                	<p>Лексичний та семантичний аналіз опису об'єкту управління</p>
+					<p>Результати лінгвістичного інформаційного аналізу у вигляді таблиці іменників  (іменникових груп) – претендентів на роль класів та атрибутів:</p>
+					<table border='0' cellspacing='0' cellpadding='2' style='border-top:solid 1px #000000; border-left:solid 1px #000000; border-right:solid 1px #000000; border-bottom:solid 1px #000000; '>
+						<tr>
+							<td class='table_row'><b> Іменник</b></td>
+							<td class='table_row'><b> Критерії належності до класу</b></td>
+							<td class='table_row'><b> Обґрунтування</b></td>
+						</tr>
+						<tr>
+							<td class='table_row'>Продукт</td>
+							<td class='table_row'>Клас</td>
+							<td class='table_row'>Сутність, що має основну інформацію про окремий костюм</td>
+						</tr>
+						
+						<tr>
+							<td class='table_row'>Покупець</td>
+							<td class='table_row'>Клас</td>
+							<td class='table_row'>Сутність, що містить у собі конфіденційну інформацію про покупця</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Товар</td>
+							<td class='table_row'>Клас</td>
+							<td class='table_row'>Об'єкт, який можна обрати та замовити</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Категория</td>
+							<td class='table_row'>Клас</td>
+							<td class='table_row'>Відповідає за сортування товарів</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Замовлення</td>
+							<td class='table_row'>Клас</td>
+							<td class='table_row'>Сутність, що пов’язує костюм та покупця</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Історія</td>
+							<td class='table_row'>Клас</td>
+							<td class='table_row'>Інформація про те, коли, ким та який костюм був замовлений</td>
+						</tr>
+						
+						<tr>
+							<td class='table_row'>ID покупця</td>
+							<td class='table_row'>Атрибут класу “Покупець”</td>
+							<td class='table_row'>Поле належить класу “Покупець”</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Ім’я</td>
+							<td class='table_row'>Атрибут класу “Покупець”</td>
+							<td class='table_row'>Поле належить класу “Покупець”</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Прізвище</td>
+							<td class='table_row'>Атрибут класу “Покупець”</td>
+							<td class='table_row'>Поле належить класу “Покупець”</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Відвідувач</td>
+							<td class='table_row'>Надлишковий</td>
+							<td class='table_row'>Семантично те ж саме, що й Покупець</td>
+						</tr>
+						</tr>
+						<tr>
+							<td class='table_row'>ID замовлення</td>
+							<td class='table_row'>Атрибут класу “Замовлення”</td>
+							<td class='table_row'>Поле належить класу “замовлення” і містить у собі інформацію як зв’язатися з лпокупцем</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Магазин</td>
+							<td class='table_row'>Клас</td>
+							<td class='table_row'>Містить інформацію про адреса час роботи магазину</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Адреса</td>
+							<td class='table_row'>Атрибут класу “Магазин”</td>
+							<td class='table_row'>Поле належить класу “Магазин” і містить у собі інформацію де проживає знаходиться магазин</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Місцезнаходження</td>
+							<td class='table_row'>Надлишковий</td>
+							<td class='table_row'>Поле належить класу “Костюм” та відповідає номеру полиці та номеру кімнати, де знаходиться костюм</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Продавець</td>
+							<td class='table_row'>Нерелевантний</td>
+							<td class='table_row'>Головний користувач системи</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Адміністратор</td>
+							<td class='table_row'>Нерелевантний</td>
+							<td class='table_row'>Семантично те ж саме, що й Продавець, з більшими правами доступу</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Інформаційний простор</td>
+							<td class='table_row'>Нерелевантний</td>
+							<td class='table_row'>Загальне поняття</td>
+						</tr>
+					</table>
+					
+                	<p>Але потрібно зауважити, що система потребує додаткові класи для збереження даних, які будуть реалізовуватися у вигляді дата-класів, що згодом будуть взаємодіяти з базою даних, тому результуюча діаграма класів матиме більше класів, ніж це зазначено при об’єктно-орієнтованій декомпозиції.</p>
+                </div>
+                <div id="7" class="item">
+					<p>Лексичний та семантичний аналіз опису об'єкту управління</p>
+					<p>Результати лінгвістичного інформаційного аналізу у вигляді таблиці дієслів (дієслівних груп) – претендентів на роль  зв’язків та методів класів</p>
+					<table border='0' cellspacing='0' cellpadding='2' style='border-top:solid 1px #000000; border-left:solid 1px #000000; border-right:solid 1px #000000; border-bottom:solid 1px #000000;'>
+						<tr>
+							<td class='table_row'><b> Дієслово</b></td>
+							<td class='table_row'><b> Критерії належності до методів</b></td>
+							<td class='table_row'><b> Обґрунтування</b></td>
+						</tr>
+						<tr>
+							<td class='table_row'>Автоматизація процесів ведення обліку товарів</td>
+							<td class='table_row'>Нерелевантний</td>
+							<td class='table_row'>Мета створення проекту</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Продаж костюмів</td>
+							<td class='table_row'>Нерелевантний</td>
+							<td class='table_row'>Загальні поняття місії магазину</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Створення замовлень</td>
+							<td class='table_row'>Нерелевантний</td>
+							<td class='table_row'>Загальні поняття роботи магазину</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Ведення статистики</td>
+							<td class='table_row'>Нерелевантний</td>
+							<td class='table_row'>Одна із задач проекту</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Знайти костюм</td>
+							<td class='table_row'>Метод класу “Товар”</td>
+							<td class='table_row'>Показати усі та доступні костюми користувачу</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Показати усі Костюми</td>
+							<td class='table_row'>Метод класу “Товар”</td>
+							<td class='table_row'>Метод дозволяє переглянути інформацію про всі костюми</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Додати новий Костюм</td>
+							<td class='table_row'>Метод класу “Товар”</td>
+							<td class='table_row'>Метод відповідає за додавання нового товару та  додаткову інформацію про нього</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Знайти костюм за фільтрами</td>
+							<td class='table_row'>Метод класу “Товар”</td>
+							<td class='table_row'>Метод відповідає за пошук товару за додатковою інформацієї про нього</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Замовити костюм</td>
+							<td class='table_row'>Метод класу “Товар”</td>
+							<td class='table_row'>Метод відповідає за створення замовлення костюму</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Перегляд замовлень</td>
+							<td class='table_row'>Метод класу “Покупець”</td>
+							<td class='table_row'>Метод відповідає за пошук замовлення покупця</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Видалити замовлення</td>
+							<td class='table_row'>Метод класу “Покупець”</td>
+							<td class='table_row'>Метод дозволяє видалити замовлення покупця</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Переглянути інформацію про магазин</td>
+							<td class='table_row'>Метод класу “Магазин”</td>
+							<td class='table_row'>Метод реалізує можливість дізнатись інформацію про склад магазину</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Перевірка чи отримане замовлення</td>
+							<td class='table_row'>Метод класу “Замовлення”</td>
+							<td class='table_row'>Метод відповідає за те, щоб дізнатися про статус замовлення</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Показати повну інформацію про замовника</td>
+							<td class='table_row'>Метод класу “Покупець”</td>
+							<td class='table_row'>Метод дозволяє переглянути конфіденційну інформацію покупця, щоб мати змогу знайти його, в разі того, якщо він не отримає замовлення</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Оновити конфіденційну інформацію замовника</td>
+							<td class='table_row'>Метод класу “Покупець”</td>
+							<td class='table_row'>Метод реалізує можливість додати та редагувати змінити інформацію про замовника</td>
+						</tr>
+					</table>
+					
+                </div>
+                <div id="8" class="item">
+                	<p>Діаграма об'єктів</p>
+                	<img src="../src/img/objectDiagram.jpg" style="width: 50%; height: 50%;" />
+                </div>
+                <div id="9" class="item">
+                	<p>
+                		Функціональні вимоги замовника - UML-діаграми
+                	</p>
+                	
+                	<img src="../src/img/usecase.jpg" style="width: 50%; height: 50%;"  />
+                </div>
+                <div id="10" class="item">
+                	<p>Діаграма класів</p>
+                	<p>Веб-застосунок буде розроблено згідно з стандартами тришарової архітектури, а також із використанням патернів Repository, Unit of Work, Data Transfer Object, Mapper.</p>
+					<p>Відповідно, буде наведено ER-діаграми шарів.</p>	 
+                	<img src="../src/img/class_diagram.jpeg" style="width: 50%; height: 50%;" />
+                </div>
+                <div id="11" class="item">
+					<p>Структура проекту</p>
+					<img src="../src/img/str1.jpeg" style="width: 30%; height: 30%;" />
+					<img src="../src/img/str2.jpeg" style="width: 30%; height: 30%;" />
+				</div>
+                <div id="12" class="item">
+					<p>Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</p>
+					<table border='0' cellspacing='0' cellpadding='2' style='border-top:solid 1px #000000; border-left:solid 1px #000000; border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>
+						<tr>
+							<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Прототип функції</td>
+							<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Семантика функції</td>
+							<td style='border-bottom:solid 1px #000000; '>Параметри</td>
+						</tr>
+						<tr>
+							<td class='table_row'>CreateUser</td>
+							<td class='table_row'>Створює нового користувача</td>
+							<td class='table_row'>Модель Користувача рівня бізнес логіки (DTO)</td>
+						</tr>
+						<tr>
+							<td class='table_row'>GetAllUsers</td>
+							<td class='table_row'>Повертаю всіх користувачів</td>
+							<td class='table_row'>Метод моделі Користувача</td>
+						</tr>
+						<tr>
+							<td class='table_row'>GetById(int id)</td>
+							<td class='table_row'>Повертає унікальний ID з DTO</td>
+							<td class='table_row'>Метод моделі Користувача</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Update(User user)</td>
+							<td class='table_row'>Дозволяє змінити дані користувача</td>
+							<td class='table_row'>Метод моделі Користувача</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Delete(User user)</td>
+							<td class='table_row'>Використовується для того, щоб видалити користувача</td>
+							<td class='table_row'>Метод моделі Користувача</td>
+						</tr>
+						<tr>
+							<td class='table_row'>CreateCategory</td>
+							<td class='table_row'>Створює нову категорію</td>
+							<td class='table_row'>Модель Категорія рівня бізнес логіки (DTO)</td>
+						</tr>
+						<tr>
+							<td class='table_row'>GetAllCategory</td>
+							<td class='table_row'>Повертаю всі категорії</td>
+							<td class='table_row'>Метод моделі Категорія</td>
+						</tr>
+						<tr>
+							<td class='table_row'>GetById(int id)</td>
+							<td class='table_row'>Повертає унікальний ID з DTO</td>
+							<td class='table_row'>Метод моделі Категорія</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Update(Category category)</td>
+							<td class='table_row'>Дозволяє змінити дані категорії</td>
+							<td class='table_row'>Метод моделі Категорія</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Delete(Category category)</td>
+							<td class='table_row'>Використовується для того, щоб видалити категорію</td>
+							<td class='table_row'>Метод моделі Категорія</td>
+						</tr>
+						<tr>
+							<td class='table_row'>CreateProduct</td>
+							<td class='table_row'>Створює новий костюм</td>
+							<td class='table_row'>Модель Костюм рівня бізнес логіки (DTO)</td>
+						</tr>
+						<tr>
+							<td class='table_row'>GetAllProduct</td>
+							<td class='table_row'>Повертаю всіх костюми</td>
+							<td class='table_row'>Метод моделі Костюм</td>
+						</tr>
+						<tr>
+							<td class='table_row'>GetById(int id)</td>
+							<td class='table_row'>Повертає унікальний ID з DTO</td>
+							<td class='table_row'>Метод моделі Користувача</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Update(Product product)</td>
+							<td class='table_row'>Дозволяє змінити дані костюму</td>
+							<td class='table_row'>Метод моделі Костюм</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Delete(Product product)</td>
+							<td class='table_row'>Використовується для того, щоб видалити костюм</td>
+							<td class='table_row'>Метод моделі Костюм</td>
+						</tr>
+					</table>
+				</div>
+				<div id="13" class="item">
+					<p> Папка з проектом</p>
+					<a href="https://github.com/evilsquirr3l/eShop">Завантажити папку з проектом</a>
+				</div>
+				<div id="14" class="item">
+					<p>Запуск ехе-файла</p>
+					<a href="https://github.com/evilsquirr3l/eShop">Завантажити програму</a>
+				</div>
+            </div>
+        </div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>
