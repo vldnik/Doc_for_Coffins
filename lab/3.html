@@ -34,71 +34,270 @@
 			<a class="topbar-item shadow" href="9.html">Lab 9</a>
 		</div>
 		<div class="main">
-            <div id="menu">
-            	<div class="dropdown">
-                	<a class="menu-item flex">1. Характеристика об’єкта автоматизації</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex active-link" onclick="ChangeTab(this, '1')">1.1. Опис об'єкта управління</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">1.2. Мета розробки проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">1.3. Бізнес-задачі</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">1.4. Бізнес-процеси</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">1.5. Сценарії дій системи</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">2. Об’єктно-орієнтована декомпозиції  предметного середовища</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.1. Таблиця обґрунтування класів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">2.2. Таблиця обґрунтування методів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">2.3. Об'єкто-орієнтована декомпозиція предметного середовища</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.4. Функціональні вимоги замовника - UML-діаграми</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">3. Проектування ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '10')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
-      
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">4. Кодування (програмування)</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '11')"> 4.1. Файлова структура проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.2. Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '1')">5.1. Папка з проектом</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">5.2. Запуск ехе-файла</a>
-               		</div>
-                </div>
-            </div>
+			<div id="menu">
+				<div class="dropdown">
+					<a class="menu-item flex " onclick="ChangeTab(this, '1')">1 Тема, мета та задача лабораторної роботи.</a>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">2. Проектування ПЗ</a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.1  Проектування структури ПЗ  - UML-діаграма класів</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '10')">2.2  Таблиця класів</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">3. Розробка ПЗ</a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '2')">3.1  Середовище розробки</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '3')">3.2  Місце розташування проекту</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">4. Кодування (програмування)  </a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '4')">4.1 Файлова структура проекту</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '5')">4.2 Програмні коди  з конструкторами</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.3 Програмний код класів з методами-властивостями та виведення даних закритих полів класів</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '6')">4.4 Програмний код класу Program та StartUp</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">5.1. Папка з проектом</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '8')">5.2. Запуск ехе-файла</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex " onclick="ChangeTab(this, '11')">6. Висновки</a>
+				</div>
+			</div>
     
             <div id="content">
-                <div id="1" class="active-item">
-                    <p>Опис предметного середовища</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-                        velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus 
-                        molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores 
-                        quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla 
-                        cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut 
-                        sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit 
-                        nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-                        impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab 
-                        adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat, 
-                        assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-                        incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae. 
-                        </p>
-                    <img src="4.jpg"/>
-                </div>
-                <div id="2" class="item">Загальна постановка задачі програми</div>
-                <div id="3" class="item">Постановка задачі лабораторної роботи №1</div>
-                <div id="4" class="item">Структура документа</div>
-                <div id="5" class="item">Висновок</div>
+				<div id="1" class="active-item">
+					<p style="margin: 0px  0px 0px 40px">Тема: ВИКОРИСТАННЯ ВЛАСТИВОСТЕЙ. АВТОМАТИЧНІ ВЛАСТИВОСТІ. СКОРОЧЕНИЙ ЗАПИС ВЛАСТИВОСТЕЙ
+					</p>
+					<p style="padding: 0  0 0 40px">
+						Мета: Здійснити введення та виведення даних закритих полів класів, застосовуючі методи-властивості.
+					</p>
+
+					<ul style="list-style-type: none"> Постановка задачі:
+						<li>1.  Доповнити програмну реалізацію класів методами-властивостями класів, введення та виведення даних закритих полів класів. </li>
+						<li>2.  Протестувати програму, шляхом запуску програми, введенням та виведенням значень закритих полів. </li>
+					</ul>
+				</div>
+                <div id="2" class="item">
+					<ul style="list-style-type: none"> Rider - це крос-платформна IDE для .NET-розробників, заснована на платформі IntelliJ і ReSharper.
+						<li><br></li>
+						<li>
+							<ul style="padding: 0px; list-style-type: none">Підтримка різних .NET-проектів
+								<li style="padding: 0px 30px">Rider підтримує .NET Framework, нову платформу .NET Core і проекти на основі Mono. IDE дозволяє розробляти десктопні програми, .NET-сервіси та бібліотеки, ігри на движку Unity, мобільні додатки Xamarin, веб-додатки ASP.NET і ASP.NET Core.</li>
+							</ul>
+						</li>
+						<li>
+							<ul style="padding: 0px; list-style-type: none">Швидкість і функціональність
+								<li style="padding: 0px 30px">Rider надає більше 2200 інспекцій коду, сотні тематичних дій і рефакторингов, запозичених з ReSharper, в поєднанні з просунутою функціональністю середовищ розробки на основі платформи IntelliJ. Незважаючи на великий набір функцій, Rider - швидка і чуйна IDE.</li>
+							</ul>
+						</li>
+						<li>
+							<ul style="padding: 0px; list-style-type: none">Крос-платформна IDE
+								<li style="padding: 0px 30px">Rider не тільки вміє запускати і налагоджувати різні додатки в різних операційних системах - сама IDE працює на Windows, macOS і Linux.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="3" class="item">
+					<p> Папка з проектом розположена на GitHub</p>
+					<a href="https://github.com/evilsquirr3l/eShop">Завантажити папку з проектом</a>
+				</div>
+				<div id="4" class="item">
+					<p>Файлова структура проекту</p>
+					<img src="../src/img/str1.jpeg" style="width: 30%; height: 30%;" />
+					<img src="../src/img/str2.jpeg" style="width: 30%; height: 30%;" />
+				</div>
+				<div id="5" class="item">
+					<p>Програмні коди з конструкторами</p>
+					<p>Код классу Product з конструкторами</p>
+					<img src="../src/img/product_const.jpeg" style="width: 30%; height: 30%;" />
+					<p>Код классу Service з конструкторами</p>
+					<img src="../src/img/service_const.jpeg" style="width: 30%; height: 30%;" />
+					<p>Код классу Controller з конструкторами</p>
+					<img src="../src/img/control_const.jpeg" style="width: 30%; height: 30%;" />
+				</div>
+				<div id="6" class="item">
+					<p>Код классу Program</p>
+					<img src="../src/img/class_program.png" style="width: 50%; height: 50%;" />
+					<p>Код классу StartUp</p>
+					<img src="../src/img/class_start1.png" style="width: 50%; height: 50%;" />
+					<img src="../src/img/class_start2.png" style="width: 50%; height: 50%;" />
+				</div>
+				<div id="7" class="item">
+					<p> Папка з проектом</p>
+					<a href="https://github.com/evilsquirr3l/eShop">Завантажити папку з проектом</a>
+				</div>
+				<div id="8" class="item">
+					<p>Запуск ехе-файла</p>
+					<a href="https://github.com/evilsquirr3l/eShop">Завантажити програму</a>
+				</div>
+				<div id="9" class="item">
+					<p>Наведемо доповнену діаграму класів нашого застосунку</p>
+					<img src="../src/img/class_diagram_2.jpeg" style="width: 50%; height: 50%;" />
+				</div>
+				<div id="10" class="item">
+					<p>Наведемо таблицю атрибутів класів нашого застосунку</p>
+					<table border='0' cellspacing='0' cellpadding='2' style='border-top:solid 1px #000000; border-left:solid 1px #000000; border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>
+						<tr>
+							<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Класс</td>
+							<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Атрибут</td>
+							<td style='border-bottom:solid 1px #000000; '>Призначення атрибуту</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Customer</td>
+							<td class='table_row'>Name</td>
+							<td class='table_row'>Збереження імені покупця</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Customer</td>
+							<td class='table_row'>Email</td>
+							<td class='table_row'>Збереження Email адреси покупця</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>Name</td>
+							<td class='table_row'>Збереження назви костюму</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>Description</td>
+							<td class='table_row'>Збереження опису костюму</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>Price</td>
+							<td class='table_row'>Збереження ціни костюму</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>Збереження категорії костюму</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>Name</td>
+							<td class='table_row'>Збереження назви категорії</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>Description</td>
+							<td class='table_row'>Збереження опису категорії</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>Products</td>
+							<td class='table_row'>Збереження костюмів одної категорії</td>
+						</tr>
+					</table>
+					<p>Наведемо таблицю методів класів нашого застосунку</p>
+					<table border='0' cellspacing='0' cellpadding='2' style='border-top:solid 1px #000000; border-left:solid 1px #000000; border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>
+						<tr>
+							<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Класс</td>
+							<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Метод</td>
+							<td style='border-bottom:solid 1px #000000; '>Опис методу</td>
+						</tr>
+						<tr>
+							<td class='table_row'>User</td>
+							<td class='table_row'>Create()</td>
+							<td class='table_row'>Створює нового користувача</td>
+
+						</tr>
+						<tr>
+							<td class='table_row'>User</td>
+							<td class='table_row'>GetAll()</td>
+							<td class='table_row'>Повертаю всіх користувачів</td>
+						</tr>
+						<tr>
+							<td class='table_row'>User</td>
+							<td class='table_row'>GetById(int id)</td>
+							<td class='table_row'>Повертає унікальний ID з DTO</td>
+						</tr>
+						<tr>
+							<td class='table_row'>User</td>
+							<td class='table_row'>Update(User user)</td>
+							<td class='table_row'>Дозволяє змінити дані користувача</td>
+						</tr>
+						<tr>
+							<td class='table_row'>User</td>
+							<td class='table_row'>Delete(User user)</td>
+							<td class='table_row'>Використовується для того, щоб видалити користувача</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>Create()</td>
+							<td class='table_row'>Створює нову категорію</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>GetAll()</td>
+							<td class='table_row'>Повертаю всі категорії</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>GetById(int id)</td>
+							<td class='table_row'>Повертає унікальний ID з DTO</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>Update(Category category)</td>
+							<td class='table_row'>Дозволяє змінити дані категорії</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Category</td>
+							<td class='table_row'>Delete(Category category)</td>
+							<td class='table_row'>Використовується для того, щоб видалити категорію</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>Create()</td>
+							<td class='table_row'>Створює новий костюм</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>GetAll()</td>
+							<td class='table_row'>Повертаю всіх костюми</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>GetById(int id)</td>
+							<td class='table_row'>Повертає унікальний ID з DTO</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>Update(Product product)</td>
+							<td class='table_row'>Дозволяє змінити дані костюму</td>
+						</tr>
+						<tr>
+							<td class='table_row'>Product</td>
+							<td class='table_row'>Delete(Product product)</td>
+							<td class='table_row'>Використовується для того, щоб видалити костюм</td>
+						</tr>
+					</table>
+				</div>
+				<div id="12" class="item">
+					<p> Програмну реалізацію класів методами-властивостями класів, введення та виведення даних закритих полів класів</p>
+					<img src="../src/img/getset1.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset2.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset3.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset4.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset5.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset6.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset7.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset8.png" style="width: 30%; height: 30%;" />
+					<img src="../src/img/getset9.png" style="width: 30%; height: 30%;" />
+				</div>
+				<div id="11" class="item">
+					<p>Висновки</p>
+					<p>В цій лабораторній роботі ми здійснили введення та виведення даних закритих полів класів, застосовуючі методи-властивості, також доповнили програмну реалізацію класів методами-властивостями класів, введення та виведення даних закритих полів класів та протестували програму, шляхом запуску програми, введенням та виведенням значень закритих полів.</p>
+				</div>
             </div>
         </div>
 		<div class="footer"></div>
