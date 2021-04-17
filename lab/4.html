@@ -34,73 +34,155 @@
 			<a class="topbar-item shadow" href="9.html">Lab 9</a>
 		</div>
 		<div class="main">
-            <div id="menu">
-            	<div class="dropdown">
-                	<a class="menu-item flex">1. Характеристика об’єкта автоматизації</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex active-link" onclick="ChangeTab(this, '1')">1.1. Опис об'єкта управління</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">1.2. Мета розробки проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">1.3. Бізнес-задачі</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">1.4. Бізнес-процеси</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">1.5. Сценарії дій системи</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">2. Об’єктно-орієнтована декомпозиції  предметного середовища</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.1. Таблиця обґрунтування класів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">2.2. Таблиця обґрунтування методів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">2.3. Об'єкто-орієнтована декомпозиція предметного середовища</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.4. Функціональні вимоги замовника - UML-діаграми</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">3. Проектування ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '10')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
-      
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">4. Кодування (програмування)</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '11')"> 4.1. Файлова структура проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.2. Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '1')">5.1. Папка з проектом</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">5.2. Запуск ехе-файла</a>
-               		</div>
-                </div>
-            </div>
+			<div id="menu">
+				<div class="dropdown">
+					<a class="menu-item flex " onclick="ChangeTab(this, '1')">1. Тема, мета та задача лабораторної роботи.</a>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">2. Проектування ПЗ</a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '2')">2.1 UML-діаграма класів</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '3')">2.2 UML-діаграма варіантів використання</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '4')">2.3 UML-діаграма станів</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '5')">2.4 UML-діаграма послідовності</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.5 UML-діаграма компонентів</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">3. Розробка ПЗ</a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">3.1  Технологіія Entity Framework Core</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '8')">3.2  Імітатор бази даних Entity Framework Core Inmemory Database</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">4. Кодування (програмування)  </a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '9')">4.1 Файлова структура проекту</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '10')">4.2 Програмні код з використанням технологіі Entity Framework Core</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '11')">4.3 Програмний код імітатору бази даних за допомогою Entity Framework Core Inmemory Database</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.4 Програмний код класу Program та StartUp</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
+					<div class="submenu">
+						<a class="submenu-item flex" onclick="ChangeTab(this, '13')">5.1. Папка з проектом</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '14')">5.2. Запуск ехе-файла</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="menu-item flex " onclick="ChangeTab(this, '15')">6. Висновки</a>
+				</div>
+			</div>
     
             <div id="content">
                 <div id="1" class="active-item">
-                    <p>Опис предметного середовища</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-                        velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus 
-                        molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores 
-                        quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla 
-                        cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut 
-                        sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit 
-                        nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-                        impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab 
-                        adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat, 
-                        assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-                        incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae. 
-                        </p>
-                    <img src="4.jpg"/>
+					<p style="margin: 0px  0px 0px 40px">Тема: ПІДКЛЮЧЕННЯ БАЗИ ДАННИХ ТА ПІДГОТОВКА ДО ТЕСТУВАННЯ ЗА ДОПОМОГОЮ ENTITY FRAMEWORK CORE INMEMORY DATABASE
+					</p>
+					<p style="padding: 0  0 0 40px">
+						Мета: Здійснити створення імітатора бази даних за допомогою Entity Framework Core Inmemory Database
+					</p>
+
+					<ul style="list-style-type: none"> Постановка задачі:
+						<li>1.  Створити імітатор бази даних за допомогою Entity Framework Core Inmemory Database для тестування. </li>
+						<li>2.  Реалізувати методи сховища даних використовуючи Entity Framework Core. </li>
+					</ul>
                 </div>
-                <div id="2" class="item">Загальна постановка задачі програми</div>
-                <div id="3" class="item">Постановка задачі лабораторної роботи №1</div>
-                <div id="4" class="item">Структура документа</div>
-                <div id="5" class="item">Висновок</div>
+				<div id="2" class="item">
+					<p>Наведемо повну діаграму класів нашого застосунку</p>
+					<img src="../src/img/classFull.png"/>
+				</div>
+				<div id="3" class="item">
+					<p>Наведемо діаграму варіантів використання нашого застосунку</p>
+					<img src="../src/img/useCaseFull.png" style="width: 50%; height: 50%;" />
+				</div>
+				<div id="4" class="item">
+					<p>Наведемо діаграму станів нашого застосунку</p>
+					<img src="../src/img/stateFull.png"/>
+				</div>
+				<div id="5" class="item">
+					<p>Наведемо діаграму послідовності нашого застосунку</p>
+					<img src="../src/img/sequenceFull.png"/>
+				</div>
+				<div id="6" class="item">
+					<p>Наведемо діаграму компонентів нашого застосунку</p>
+					<img src="../src/img/componentFull.png"/>
+				</div>
+                <div id="7" class="item">
+					<p>Використання технологіі Entity Framework Core</p>
+					<p>Entity Framework Core (EF Core) являє собою об'єктно-орієнтовану, легковажну і расширяемую технологію від компанії Microsoft для доступу до даних. 
+						EF Core є ORM-інструментом (object-relational mapping - відображення даних на реальні об'єкти). Тобто EF Core дозволяє працювати базами даних, але є більш високий рівень абстракції: 
+						EF Core дозволяє абстрагуватися від самої бази даних і її таблиць і працювати з даними незалежно від типу сховища. Якщо на фізичному рівні ми оперуємо таблицями, індексами, первинними і зовнішніми ключами, але на концептуальному рівні, який нам пропонує Entity Framework, ми вже працюємо з об'єктами.
+						Entity Framework Core підтримує безліч різних систем баз даних. Таким чином, ми можемо через EF Core працювати з будь-якої СУБД, якщо для неї є потрібний провайдер.</p>
+					<p>Також варто відзначити, що EF Core надає універсальний API для роботи з даними. І якщо, наприклад, ми вирішимо змінити цільову СУБД, то основні зміни в проекті будуть стосуватися насамперед конфігурації і настройки підключення до відповідних провайдерам. 
+						А код, який безпосередньо працює з даними, отримує дані, додає їх в БД і т.д., залишиться колишнім. Центральної концепцією Entity Framework є поняття сутності або entity. Сутність визначає набір даних, які пов'язані з певним об'єктом. 
+						Тому дана технологія передбачає роботу не з таблицями, а з об'єктами і їх колекціями. Відмінною рисою Entity Framework Core, як технології ORM, є використання запитів LINQ для вибірки даних з БД. 
+						За допомогою LINQ ми можемо створювати різні запити на вибірку об'єктів, в тому числі пов'язаних різними асоціативними зв'язками. А Entity Framework при виконання запиту транслює вираження LINQ в вирази, зрозумілі для конкретної СУБД (як правило, в вирази SQL).</p>
+				</div>
+                <div id="8" class="item">
+					<p>Використання імітатору бази даних за допомогою Entity Framework Core Inmemory Database для тестування.</p>
+					<p>Резидентна база даних (англ. In-memory database, IMDB) - база даних, що розміщується в оперативній памяті.
+						Резідентние СУБД за рахунок оптимізацій, можливих в умовах зберігання і обробки в байтоадресуемой оперативної пам'яті, забезпечують кращу швидкодію, ніж СУБД, що працюють з базами даних на пристроях постійного зберігання, як правило, з блочною організацією, і підключаються по шинним або мережних інтерфейсів. 
+						При цьому розмір резидентної бази даних обмежений ємністю оперативної пам'яті вузла. Для ряду резидентних СУБД реалізуються техніки реплікації і сегментування (англ. Sharding), що дозволяють працювати з єдиною резидентної базою даних на декількох вузлах. 
+						Оскільки оперативна пам'ять енергозалежна, то використовується запис з попередніми журналированием на енергонезалежному пристрої для забезпечення цілісності бази даних при раптової перезавантаження, тобто, робота з резидентної базою не виключає залежності від продуктивності підсистеми вводу-виводу (хоча і знижує її).</p>
+				</div>
+				<div id="9" class="item">
+					<p>Файлова структура проекту</p>
+					<img src="../src/img/str1.jpeg" style="width: 30%; height: 30%;" />
+					<img src="../src/img/str2.jpeg" style="width: 30%; height: 30%;" />
+				</div>
+				<div id="10" class="item">
+					<p>Програмний код з використанням технологіі Entity Framework Core</p>
+					<img src="../src/img/entityBase.png" style="width: 30%; height: 30%;" />
+					<br>
+					<img src="../src/img/entityCart.png" style="width: 30%; height: 30%;" />
+					<br>
+					<img src="../src/img/entityCategory.png" style="width: 30%; height: 30%;" />
+					<br>
+					<img src="../src/img/entityCustomer.png" style="width: 30%; height: 30%;" />
+					<br>
+					<img src="../src/img/entityProduct.png" style="width: 30%; height: 30%;" />
+					<br>
+					<p>Для того щоб відокремити шар даних та шар бізнес-логіки, на верхніх шарах використовується бізнес-моделі замість дата-сутностей:</p>
+					<img src="../src/img/dtoCart.png" style="width: 30%; height: 30%;" />
+					<br>
+					<img src="../src/img/dtoCustomer.png" style="width: 30%; height: 30%;" />
+					<br>
+					<img src="../src/img/dtoProduct.png" style="width: 30%; height: 30%;" />
+					<p>За поєднання сутностей з дата-шару та бізнес-шару відповідає класи AutoMapperProfile у Business.Implementation:</p>
+					<img src="../src/img/autoMapper.png" style="width: 30%; height: 30%;" />
+				</div>
+				<div id="11" class="item">
+					<p>Програмний код імітатору бази даних за допомогою Entity Framework Core Inmemory Database</p>
+					<img src="../src/img/UnitTestsHelper.png"/>
+					<br>
+					<img src="../src/img/AbstractValidator_CartDto.png"/>
+				</div>
+				<div id="12" class="item">
+					<p>Код классу Program</p>
+					<img src="../src/img/class_program.png" style="width: 50%; height: 50%;" />
+					<p>Код классу StartUp</p>
+					<img src="../src/img/class_start1.png" style="width: 50%; height: 50%;" />
+					<img src="../src/img/class_start2.png" style="width: 50%; height: 50%;" />
+				</div>
+				<div id="13" class="item">
+					<p> Папка з проектом</p>
+					<a href="https://github.com/evilsquirr3l/eShop">Завантажити папку з проектом</a>
+				</div>
+				<div id="14" class="item">
+					<p>Запуск ехе-файла</p>
+					<a href="https://github.com/evilsquirr3l/eShop">Завантажити програму</a>
+				</div>
+				
+				<div id="15" class="item">
+					<p>Висновки</p>
+					<p>В цій лабораторній роботі ми здійснили створення імітатора бази даних за допомогою Entity Framework Core Inmemory Database, також доповнили програмну реалізацію методів сховища даних використовуючи Entity Framework Core та підготували програму до тестування, шляхом написання тестів.</p>
+				</div>
+				
             </div>
         </div>
 		<div class="footer"></div>
 	</div>
+</body>
 </html>
