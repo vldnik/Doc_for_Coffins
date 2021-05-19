@@ -51,17 +51,15 @@
 				<div class="dropdown">
 					<a class="menu-item flex">3. Розробка ПЗ</a>
 					<div class="submenu">
-						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">3.1 Використання ЗАДАНІЯ</a>
-						<a class="submenu-item flex" onclick="ChangeTab(this, '8')">3.2 Використання ЗАДАНІЯ</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">3.1 Використання Інверсія управління (IoC)</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '8')">3.2 Теорія до реалізації Інверсія управління (IoC)</a>
 					</div>
 				</div>
 				<div class="dropdown">
 					<a class="menu-item flex">4. Кодування (програмування)  </a>
 					<div class="submenu">
 						<a class="submenu-item flex" onclick="ChangeTab(this, '9')">4.1 Файлова структура проекту</a>
-						<a class="submenu-item flex" onclick="ChangeTab(this, '10')">4.2 Програмний код ЗАДАНІЯ</a>
-						<a class="submenu-item flex" onclick="ChangeTab(this, '11')">4.3 Програмний код з реалізацією ЗАДАНІЯ</a>
-						<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.4 Програмний код класу Program та StartUp</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '11')">4.3 Програмний код з реалізацією інверсії управління (IoC)</a>
 					</div>
 				</div>
 				<div class="dropdown">
@@ -78,15 +76,14 @@
     
             <div id="content">
 				<div id="1" class="active-item">
-					<p style="margin: 0px  0px 0px 40px">Тема: ЗАДАНІЯ
+					<p style="margin: 0px  0px 0px 40px">Тема: Інверсія управління (IoC)
 					</p>
 					<p style="padding: 0  0 0 40px">
-						Мета: Придбати практичні навички роботи з ЗАДАНІЯ.
+						Мета: Придбати практичні навички роботи з Інверсія управління (IoC).
 					</p>
 
 					<ul style="list-style-type: none"> Постановка задачі:
-						<li>1.  Покрити програмну реалізацію ЗАДАНІЯ. </li>
-						<li>2.  ЗАДАНІЯ. </li>
+						<li>1.  Покрити програмну реалізацію выкористанням Інверсія управління (IoC). </li>
 					</ul>
 				</div>
 				<div id="2" class="item">
@@ -110,45 +107,35 @@
 					<img src="../src/img/componentFull.png"/>
 				</div>
 				<div id="7" class="item">
-					<p>Використання ЗАДАНІЯ</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-						velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus
-						molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores
-						quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla
-						cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut
-						sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit
-						nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-						impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab
-						adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat,
-						assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-						incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae.</p>
+					<p>Використання Інверсія управління (IoC)</p>
+					<p>Наприклад, у випадку традиційного програмування, головна функція програми може викликати функцію із бібліотеки, щоб відобразити список доступних команд, і запросити користувача вибрати одну з них.
+						Бібліотека поверне вибрану опцію як результат виклику функції. Цей стиль використовувався у текстових інтерфейсах. Наприклад, поштовий клієнт може показати екран з командами для завантаження нових листів, відповіді на поточний лист, розпочати новий лист і т. д., а виконання програми буде заблоковане допоки користувач не натисне клавішу, щоб обрати команду.
+						Натомість, у випадку інверсії управління, програма пишеться із використанням програмного каркаса, який знає загальні поведінкові і графічні елементи, такі як віконний інтерфейс, меню, керування мишкою тощо.
+						Користувацький код «заповнює пробіли» у каркасі, такі як надавання таблиці елементів меню і реєстрація підпрограм для кожного елемента, але відслідковування дій користувача і виклик пов'язаної підпрограми є завданням каркаса.
+						У прикладі поштового клієнта, каркас може слідкувати за клавіатурою і мишкою і викликати команду, обрану користувачем, також одночасно з цим моніторити мережевий інтерфейс, щоб помітити прибуття нового повідомлення і оновити екран коли з'являється мережева активність.
+						Цей самий каркас можна використати як скелет для програми електронних таблиць або текстового редактора. З іншого боку, каркас нічого не знає про веб-оглядачі, електронні таблиці, текстові редактори; втіленням їх функціональності займається користувацький код.
+						Інверсія управління несе важливу ідею, що повторно використовний код і завдання-залежний код розробляються незалежно, хоча й діють разом. Програмні каркаси, callback'и, планувальники, цикли подій і впровадження залежностей є прикладами шаблонів, що слідують принципу інверсії управління, хоча термін найчастіше вживається в контексті ООП.</p>
 				</div>
 				<div id="8" class="item">
-					<p>Теорія до реалізації ЗАДАНІЯ</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-						velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus
-						molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores
-						quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla
-						cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut
-						sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit
-						nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-						impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab
-						adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat,
-						assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-						incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae.</p>
+					<p>Теорія до реалізації Інверсія управління (IoC)</p>
+					<p>Інверсія управління (IoC) - важливий принцип об'єктно-орієнтованого програмування, що використовується для зменшення залученості (взаємодії) в комп'ютерних програмах.
+						Також рішення архітектурної інтеграції, яке спрощує розширення системи, в якій потік управління програмою контролюється фреймворком.
+						Його можна назвати набором рекомендацій, які дозволяють розробляти і реалізовувати програми з використанням слабкої прив'язки окремих компонентів.
+						Тобто, щоб слідувати принципам инверсионного управління, нам необхідно реалізувати компоненти, які відповідають за одну конкретну задачу, компоненти повинні бути максимально незалежними один від одного, компоненти не повинні залежати від конкретної реалізації один одного.</p>
 				</div>
 				<div id="9" class="item">
 					<p>Файлова структура проекту</p>
 					<img src="../src/img/str1.jpeg" style="width: 30%; height: 30%;" />
 					<img src="../src/img/str2.jpeg" style="width: 30%; height: 30%;" />
 				</div>
-				<div id="10" class="item">
-					<p>Програмний код проекту для ЗАДАНІЯ</p>
-					<img src="../src/img/serg.jpg" style="width: 50%; height: 50%;" />
-				</div>
 				<div id="11" class="item">
-					<p>Програмний код ЗАДАНІЯ</p>
-					<img src="../src/img/serg.jpg" style="width: 50%; height: 50%;" />
+					<p>Програмний код з реалізацією інверсії управління (IoC)</p>
+					<p>За впровадження залежностей та розподілення зв'язків для бізнес-шару відповідає клас ServiceCollectionExtension:</p>
+					<img src="../src/img/ServiceCollectionExtension.png"  />
+					<p>За впровадження залежностей та розподілення зв'язків для дата-шару відповідає клас DataServices:</p>
+					<img src="../src/img/DataServices.png"  />
+					<p>А також дуже важливо прописати у файлі StartUp наступний код для того щоб також розмежувати шари:</p>
+					<img src="../src/img/ioc_startup.png"  />
 				</div>
 				<div id="12" class="item">
 					<p>Код классу Program</p>
@@ -168,8 +155,8 @@
 
 				<div id="15" class="item">
 					<p>Висновки</p>
-					<p>В цій лабораторній роботі ми здійснили вивчення та впровадження в наш програмний продукт ЗАДАНІЯ.
-						Також використали це для ЗАДАНІЯ.</p>
+					<p>В цій лабораторній роботі ми здійснили вивчення та впровадження в наш програмний продукт Інверсія управління (IoC).
+						Також використали це для для зменшення залученості (взаємодії) в комп'ютерній програмі.</p>
 				</div>
             </div>
         </div>
