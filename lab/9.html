@@ -51,16 +51,16 @@
 				<div class="dropdown">
 					<a class="menu-item flex">3. Розробка ПЗ</a>
 					<div class="submenu">
-						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">3.1 Використання ЗАДАНІЯ</a>
-						<a class="submenu-item flex" onclick="ChangeTab(this, '8')">3.2 Використання ЗАДАНІЯ</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">3.1 Використання Docker</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '8')">3.2 Використання Azure</a>
 					</div>
 				</div>
 				<div class="dropdown">
 					<a class="menu-item flex">4. Кодування (програмування)  </a>
 					<div class="submenu">
 						<a class="submenu-item flex" onclick="ChangeTab(this, '9')">4.1 Файлова структура проекту</a>
-						<a class="submenu-item flex" onclick="ChangeTab(this, '10')">4.2 Програмний код ЗАДАНІЯ</a>
-						<a class="submenu-item flex" onclick="ChangeTab(this, '11')">4.3 Програмний код з реалізацією ЗАДАНІЯ</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '10')">4.2 Створення та використання Docker</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '11')">4.3 Деплой проекту у сервіс Azure</a>
 						<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.4 Програмний код класу Program та StartUp</a>
 					</div>
 				</div>
@@ -78,15 +78,15 @@
     
             <div id="content">
 				<div id="1" class="active-item">
-					<p style="margin: 0px  0px 0px 40px">Тема: ЗАДАНІЯ
+					<p style="margin: 0px  0px 0px 40px">Тема: ДЕПЛОЙ ПРОЕКТУ 
 					</p>
 					<p style="padding: 0  0 0 40px">
-						Мета: Придбати практичні навички роботи з ЗАДАНІЯ.
+						Мета: Придбати практичні навички роботи з виконання деплою проекта за допомогою Docker та Azure.
 					</p>
 
 					<ul style="list-style-type: none"> Постановка задачі:
-						<li>1.  Покрити програмну реалізацію ЗАДАНІЯ. </li>
-						<li>2.  ЗАДАНІЯ. </li>
+						<li>1.  Створити контейнер за проектом за допомогою Docker. </li>
+						<li>2.  Виконати деплой проекту у мережу за допомогою Azure. </li>
 					</ul>
 				</div>
 				<div id="2" class="item">
@@ -110,32 +110,32 @@
 					<img src="../src/img/componentFull.png"/>
 				</div>
 				<div id="7" class="item">
-					<p>Використання ЗАДАНІЯ</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-						velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus
-						molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores
-						quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla
-						cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut
-						sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit
-						nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-						impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab
-						adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat,
-						assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-						incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae.</p>
+					<p>Теорія до використання Docker</p>
+					<p>Docker — інструмент з відкритим сирцевим кодом, який автоматизує розгортання застосунку у середовищах, що підтримують контейнеризацію. 
+						Docker дозволяє не переймаючись вмістом контейнера запускати довільні процеси в режимі ізоляції і потім переносити і клонувати сформовані 
+						для даних процесів контейнери на інші сервери, беручи на себе всю роботу зі створення, обслуговування і підтримки контейнерів. Docker доповнює 
+						інструментарій LXC більш високорівневим API, що дозволяє керувати контейнерами на рівні ізоляції окремих процесів.</p>
+					<p>Docker Compose - інструмент для створення і запуску многоконтейнерних Docker додатків. У Compose, ви використовуєте спеціальний файл для конфігурації ваших сервісів додатки. 
+						Compose чудовий для розробки, тестування і налаштування середовища, а також безперервної інтеграції. Compose захищає всі томи використовуються вашими севіс. Коли запускається 
+						docker-compose up, якщо існують контейнери від попередніх запусків, то томи даних копіюються зі старих контейнерів в нові. Цей процес гарантує, що будь-які дані,
+						які ви створили в обсягах не загубляться. Docker Compose кешируєт конфігурацію використану для створення контейнера. Коли ви перезапускаєте сервіс без змін, Compose використовує існуючі контейнери. 
+						Повторне використання контейнерів дозволяє дуже швидко вносити зміни в ваше оточення.</p>
 				</div>
 				<div id="8" class="item">
-					<p>Теорія до реалізації ЗАДАНІЯ</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-						velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus
-						molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores
-						quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla
-						cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut
-						sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit
-						nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-						impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab
-						adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat,
-						assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-						incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae.</p>
+					<p>Теорія до використання Azure</p>
+					<p>Хмарна платформа та інфраструктура корпорації Microsoft, призначена для розробників застосунків хмарних обчислень (англ. cloud computing) 
+						і покликана спростити процес створення онлайнових додатків. Windows Azure дозволяє створювати додатки як за допомогою Microsoft 
+						.NET Framework і Visual Studio, так і за допомогою інших інструментів. Операційна система працює на серверах Microsoft, доступ до неї можна 
+						отримати за протоколами HTTP, Representational State Transfer (REST), WS-* і Atom Publishing Protocol (AtomPub).
+						Платформа Azure Services Platform включає п'ять основних компонентів. Це сама операційна система Windows Azure, що керує дисковим простором,
+						додатками і мережами, і Microsoft SQL Services для роботи з базами даних. Також в платформу входять Microsoft .NET Services, Live Services, 
+						і бізнес-компонент, що включає Microsoft SharePoint Services і Microsoft Dynamics CRM Services.
+						Важливим компонентом є SDK емулятор хмари. Застосунок працює на емуляторі, він має доступ до бібліотек, зареєстрованих у місцевому глобальному 
+						кеші збірок (GAC), для реєстрації та конфігурації комп'ютера. Ці послуги доступні не на фактичній платформі. Емулятор дозволяє запам'ятовувати 
+						діагностичну інформацію на консолі або використовувати Windows Azure Diagnositcs. Уся інформація зберігається в спеціальній таблиці в Windows Azure Storage. 
+						Всі екземпляри, що працюють на емуляторі, мають привілеї адміністратора і ті, які працюють на платформі є силою стандартного користувача Windows. 
+						Емулятор неповною мірою відображає поведінку балансування навантаження, використовувану на Windows Azure Platform.
+					</p>
 				</div>
 				<div id="9" class="item">
 					<p>Файлова структура проекту</p>
@@ -143,12 +143,38 @@
 					<img src="../src/img/str2.jpeg" style="width: 30%; height: 30%;" />
 				</div>
 				<div id="10" class="item">
-					<p>Програмний код проекту для ЗАДАНІЯ</p>
-					<img src="../src/img/serg.jpg" style="width: 50%; height: 50%;" />
+					<p>Створення та використання Docker</p>
+					<p>Для того розвернути наш додаток, нам потрібно буде створити Docker-файл, він буде контейнером для нашого додатку. </p>
+					<img src="../src/img/dockerfile.png" />
+					<p>Тут можна побачити що Докер файл створюється з використанням технології .NET 5.0 та nodejs, 
+						це є розгортанням чаcтини API, нашого проекту. Тут відбувається копіювання файлів проекту, 
+						а також вміст усіх інших папок в окрему робочу директорію. Пізніше ці файли будуть використовуватись,
+						щоб скомпілювати бібліотечні файли, які по суті і будуть використовуватись для запуску веб-застосунку.</p>
+					<img src="../src/img/dockerImage.png" />
+					<br>
+					<img src="../src/img/dockerInfo.png" />
+					<p>Також ми можемо переконатися що наш контейнер працює вірно, усі порти налаштовані правильно, та немає жодних помилок.</p>
+					<img src="../src/img/dockerContainer.png"  />
 				</div>
 				<div id="11" class="item">
-					<p>Програмний код ЗАДАНІЯ</p>
-					<img src="../src/img/serg.jpg" style="width: 50%; height: 50%;" />
+					<p>Деплой проекту у сервіс Azure</p>
+					<p>Тепер ми вирішили перейти до етапу розгортання додатку у хмарному сховищі Azure, 
+						для цього використовують свій акаунт, на якому маємо тестові гроші за студентської
+						підпискою, ми створюємо сервіс та вказуємо усі потрібні параметри, за нашими потребами: </p>
+					<img src="../src/img/azureConfig.png" />
+					<p>Тут ми вказуємо який сервер нам потрібно використовувати, для якої території ми прогнозуємо 
+						використання нашого проекту, від цього вибираємо потрібний сервер для найкращої швидкодії.
+						А також ми обираємо ім’я нашого домену, який буде використовуватися під час деплою. </p>
+					<img src="../src/img/azureActions.png" />
+					<p>Після цього ми можемо контролювати процес за допомогою статистики подій, де ми бачимо хто саме зробив 
+						ту або іншу дію, яку саме дію він зробив, та її статус виконання.
+						Коли наш сайт вже буду повністю завантажений у сервіс Azure, не можемо контролювати його роботи за 
+						допомогли статистики, яка у реальному часі показує статус роботи проекту, кількість відвідувань,
+						кількість запитів, та час, який користувач провів користуючись проектом. Це можна побачити на рисунку, 
+						що показує статистику сайту у сервісі Azure.</p>
+					<img src="../src/img/azureState.png" />
+					<p>Після того як сайт вже повністю завантажена можемо перейти за посиланням та знайти його у мережі, повністю працюючим.</p>
+					<img src="../src/img/azureDone.png"  />
 				</div>
 				<div id="12" class="item">
 					<p>Код классу Program</p>
@@ -168,8 +194,8 @@
 
 				<div id="15" class="item">
 					<p>Висновки</p>
-					<p>В цій лабораторній роботі ми здійснили вивчення та впровадження в наш програмний продукт ЗАДАНІЯ.
-						Також використали це для ЗАДАНІЯ.</p>
+					<p>В цій лабораторній роботі ми вивчили та виконали деплой проекта за допомогою Microsoft Azure.
+						Також використали Docker та Docker Compose для цього завдання.</p>
 				</div>
             </div>
         </div>
